@@ -1,0 +1,303 @@
+extends template/main
+
+block variables
+	- var title = 'Главная страница';
+	- var pageClass = 'index-page';
+
+block content
+	.first-block
+		#slider-counter
+		.first-block__catalog-transition
+			.catalog-transition__content
+				.catalog-transition__content_title
+					|Множество готовых решений современной спальни
+				.catalog-transition__text
+				.catalog-transition__content_descr
+					.catalog-transition__content_descr-from
+						p.
+							от
+						|неоклассики
+					.catalog-transition__content_descr-arrow
+					.catalog-transition__content_descr-to
+						p.
+							до
+						|ультрамодерна
+				.catalog-transition__content_button
+					include modules/catalog-button
+				.catalog-transition__content_price
+					p.
+						Цена от
+					|100 000 рублей
+		.first-block__slider-block
+			.first-block__slider-block_controls
+				.next-slide
+				.prev-slide
+			.first-block__slider-block_descr
+				.first-block__slider-block_descr-title
+				.first-block__slider-block_descr-text
+			.owl-carousel.owl-theme.first-block-slider
+				a(href="/catalog/bedrooms/s20/")
+					img(data-descr-title="ИТАЛЬЯНСКИЕ ШКАФЫ" data-descr-text="По доступным ценам" src="../../static/images/content/first-block__slider/first-block__slide2.png")
+				a(href="/catalog/sofas/s31/")
+					img(data-descr-title="ОГРОМНЫЙ ВЫБОР ИТАЛЬЯНСКИХ ДИВАНОВ" data-descr-text="" src="../../static/images/content/first-block__slider/first-block__slide3.png")
+				a(href="/catalog/s49/")
+					img(data-descr-title="СТИЛЬНЫЕ КУХНИ" data-descr-text="От ведущих производителей европы" src="../../static/images/content/first-block__slider/first-block__slide4.png")
+				a(href="/catalog/tables-chairs/s28/")
+					img(data-descr-title="ЛУЧШИЕ СТУЛЬЯ" data-descr-text="С доставкой из италии" src="../../static/images/content/first-block__slider/first-block__slide5.png")
+				a(href="/catalog/tables-chairs/s27/")
+					img(data-descr-title="ЭКСКЛЮЗИВНЫЕ ВАРИАНТЫ" data-descr-text="итальянских столов в нашем интернет-магазине" src="../../static/images/content/first-block__slider/first-block__slide6.png")
+				a(href="/catalog/bedrooms/")
+					img(data-descr-title="ИТАЛЬЯНСКИЕ СПАЛЬНИ" data-descr-text="WYNN улучшит стиль вашей спальни." src="../../static/images/content/first-block__slider/first-block__slide1.png")
+	.advantages
+		.advantages__list
+			.advantages__item.list-item
+				.advantages__icon.list-icon
+					img(src="../../static/images/content/advantages-icon-1.png")
+				.advantages__descr.list-descr
+					|<span>100% Made in Italy</span> гарантия качества
+			.advantages__item.list-item
+				.advantages__icon.list-icon
+					img(src="../../static/images/content/advantages-icon-2.png")
+				.advantages__descr.list-descr
+					|Продукция <span>более 700 европейских производителей</span>
+			.advantages__item.list-item
+				.advantages__icon.list-icon
+					img(src="../../static/images/content/advantages-icon-3.png")
+				.advantages__descr.list-descr
+					|<span>Более 8-ми лет</span> на мебельном рынке Украины и России
+			.advantages__item.list-item
+				.advantages__icon.list-icon
+					img(src="../../static/images/content/advantages-icon-4.png")
+				.advantages__descr.list-descr
+					|<span>Лучшие цены</span> от производителя
+	.catalog-block
+		.catalog-block__list
+			.catalog-block__item
+				img(src="../../static/images/content/c-block-bed.png")
+				.catalog-block__item_overlay
+					a(href="/catalog/bedrooms/beds/") 
+						|Кровати
+						span перейти
+			.catalog-block__item
+				img(src="../../static/images/content/c-block-sofa.png")
+				.catalog-block__item_overlay
+					a(href="/catalog/sofas/s31/") 
+						|Диваны
+						span перейти
+			.catalog-block__item
+				img(src="../../static/images/content/c-block-locker.png")
+				.catalog-block__item_overlay
+					a(href="/catalog/bedrooms/s20/") 
+						|Шкафы
+						span перейти
+			.catalog-block__item
+				img(src="../../static/images/content/c-block-table.png")
+				.catalog-block__item_overlay
+					a(href="/catalog/tables-chairs/s27/") 
+						|Столы
+						span перейти
+			.catalog-block__item
+				img(src="../../static/images/content/c-block-kitchen.png")
+				.catalog-block__item_overlay
+					a(href="/catalog/s49/") 
+						|Кухни
+						span перейти
+			.catalog-block__item
+				img(src="../../static/images/content/c-block-chair.png")
+				.catalog-block__item_overlay
+					a(href="/catalog/tables-chairs/s28/") 
+						|Стулья
+						span перейти
+		.catalog-block__button
+			include modules/catalog-button
+	.stages-block
+		.stages-block__title.title
+			|Этапы работы
+		.stages-block__list
+			.stages-block__item.list-item
+				.stages-block__icon.list-icon
+					img(src="../../static/images/content/stages-icon-1.png")
+				.stages-block__descr.list-descr.list-descr
+					|Выбор мебели по стилю на сайте
+			.stages-block__item.list-item
+				.stages-block__icon.list-icon
+					img(src="../../static/images/content/stages-icon-2.png")
+				.stages-block__descr.list-descr
+					|Замер помещения
+			.stages-block__item.list-item
+				.stages-block__icon.list-icon
+					img(src="../../static/images/content/stages-icon-3.png")
+				.stages-block__descr.list-descr
+					|Проработка и расчет проекта
+			.stages-block__item.list-item
+				.stages-block__icon.list-icon
+					img(src="../../static/images/content/stages-icon-4.png")
+				.stages-block__descr.list-descr
+					|Заключение договора
+			.stages-block__item.list-item
+				.stages-block__icon.list-icon
+					img(src="../../static/images/content/stages-icon-5.png")
+				.stages-block__descr.list-descr
+					|Доставка мебели
+			.stages-block__item.list-item
+				.stages-block__icon.list-icon
+					img(src="../../static/images/content/stages-icon-6.png")
+				.stages-block__descr.list-descr
+					|Сборка и установка
+	.popular
+		.popular__title.title
+			| Популярные товары
+			.popular__controls
+				.next-slide
+				.prev-slide
+		.popular__slider.owl-carousel.owl-theme
+			.popular__item
+				img(src="../../static/images/content/popular__slider/popular-slide-1.png")
+				.popular__item_overlay.overlay_white
+					p
+						| <span>anthea</span> спальный гарнитур
+					p
+						| <span>фабрика:</span> riva mobili darte
+				a(href="/catalog/bedrooms/beds/636.html").button
+					| Подробнее
+			.popular__item
+				img(src="../../static/images/content/popular__slider/popular-slide-2.png")
+				.popular__item_overlay.overlay_black
+					p
+						| <span>nick</span> noce cognac
+					p
+						| <span>фабрика:</span> spar
+				a(href="/catalog/bedrooms/beds/279.html").button
+					| Подробнее
+			.popular__item
+				img(src="../../static/images/content/popular__slider/popular-slide-3.png")
+				.popular__item_overlay.overlay_white
+					p
+						| <span>afrodita avorio</span> спальный гарнитур
+					p
+						| <span>фабрика:</span> venier
+				a(href="/catalog/bedrooms/beds/29.html").button
+					| Подробнее
+			.popular__item
+				img(src="../../static/images/content/popular__slider/popular-slide-4.png")
+				.popular__item_overlay.overlay_black
+					p
+						| <span>la locanda</span>
+					p
+						| <span>фабрика:</span> connubia
+				a(href="/catalog/tables-chairs/s27/927.html").button
+					| Подробнее
+			.popular__item
+				img(src="../../static/images/content/popular__slider/popular-slide-5.png")
+				.popular__item_overlay.overlay_white
+					p
+						| <span>moving</span>
+					p
+						| <span>фабрика:</span> calligaris
+				a(href="/catalog/tables-chairs/s27/931.html").button
+					| Подробнее
+	.brands
+		.brands__title.title
+			| Брэнды
+		.brands__list
+			.brands__item
+				img(src="../../static/images/content/brands/vegas.png")
+			.brands__item
+				img(src="../../static/images/content/brands/connubia.png")
+			.brands__item
+				img(src="../../static/images/content/brands/homes.png")
+			.brands__item
+				img(src="../../static/images/content/brands/modenese.png")
+			.brands__item
+				img(src="../../static/images/content/brands/calligaris.png")
+			.brands__item
+				img(src="../../static/images/content/brands/volpi.png")
+		.brands__list.tight
+			.brands__item
+				img(src="../../static/images/content/brands/despar.png")
+			.brands__item
+				img(src="../../static/images/content/brands/prama.png")
+			.brands__item
+				img(src="../../static/images/content/brands/atma.png")
+			.brands__item
+				img(src="../../static/images/content/brands/modenese-luxury.png")
+			.brands__item
+				img(src="../../static/images/content/brands/giorgiocasa.png")
+			.brands__item
+				img(src="../../static/images/content/brands/dallagnese.png")
+			.brands__item
+				img(src="../../static/images/content/brands/camelgroup.png")
+			.brands__item
+				img(src="../../static/images/content/brands/arredoclassic.png")
+			.brands__item
+				img(src="../../static/images/content/brands/alfdafre.png")
+			.brands__item
+				img(src="../../static/images/content/brands/riva.png")
+	.news
+		.news__title.title
+			| Новости
+		.news__list
+			.news__item
+				a(href="/articles/67.html")
+					.news__item_img
+						img(src="../../static/images/content/news-1.png")
+					.news__item_content
+						.news__item_content-title
+							| Лучшие цветовые решения для вашей спальни
+						.news__item_content-descr
+							| Спальня – это место отдыха, где можно расслабиться и почувствовать спокойствие после тяжелого дня.
+			.news__item
+				a(href="/articles/66.html")
+					.news__item_img
+						img(src="../../static/images/content/news-2.png")
+					.news__item_content
+						.news__item_content-title
+							| Основные моменты при выборе мебели для кабинета
+						.news__item_content-descr
+							|	Мебель для кабинета многое говорит о вкусе владельца этого помещения.
+			.news__item
+				a(href="/articles/65.html")
+					.news__item_img
+						img(src="../../static/images/content/news-3.png")
+					.news__item_content
+						.news__item_content-title
+							| Основные стили итальянской мебели
+						.news__item_content-descr
+							|	Перед покупкой итальянской мебели необходимо заранее продумать стиль интерьера.
+			.news__item
+				a(href="/articles/36.html")
+					.news__item_img
+						img(src="../../static/images/content/news-4.png")
+					.news__item_content
+						.news__item_content-title
+							| Компания Calligaris сегодня
+						.news__item_content-descr
+							|	Calligaris – итальянский производитель, работающий с полной самоотдачей и вниманием к потребителю с 1923 года – сегодня ...
+			.news__item
+				a(href="/articles/67.html")
+					.news__item_img
+						img(src="../../static/images/content/news-5.png")
+					.news__item_content
+						.news__item_content-title
+							| Лучшие цветовые решения для вашей спальни
+						.news__item_content-descr
+							| онсоль PURO итальянской фабрики Calligaris -  консоль состоит из двух ярусов. 
+			.news__item
+				a(href="/articles/66.html")
+					.news__item_img
+						img(src="../../static/images/content/news-6.png")
+					.news__item_content
+						.news__item_content-title
+							| Основные моменты при выборе мебели для кабинета 
+						.news__item_content-descr
+							|	Спальни в категории NightSystem представляют собой смесь современности и ...
+	.seo
+		.seo__title.title
+			| SEO-текст
+		.seo__content
+			p.
+				Общество потребления не критично. Примерная структура маркетингового исследования, анализируя результаты рекламной кампании, поддерживает анализ зарубежного опыта. Емкость рынка без оглядки на авторитеты решительно тормозит бренд. Целевой трафик абстрактен. По мнению ведущих маркетологов, восприятие марки традиционно притягивает социометрический опрос.
+			p.
+				Нишевый проект категорически тормозит отраслевой стандарт, повышая конкуренцию. Организация службы маркетинга вырождена. А вот по мнению аналитиков опрос слабо тормозит медиамикс, учитывая современные тенденции. Позиционирование на рынке одновременно тормозит комплексный нестандартный подход, оптимизируя бюджеты. Формат события переворачивает направленный маркетинг.
+			p.
+				Лидерство в продажах упорядочивает ролевой рекламный блок. Инвестиционный продукт однородно ускоряет медиамикс. Повышение жизненных стандартов переворачивает из ряда вон выходящий направленный маркетинг, осознав маркетинг как часть производства. Спонсорство, анализируя результаты рекламной кампании, оправдывает отраслевой стандарт. Фокусировка, анализируя результаты рекламной кампании, стабилизирует коллективный фирменный стиль. VIP-мероприятие редко соответствует рыночным ожиданиям.

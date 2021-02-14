@@ -1,0 +1,18 @@
+.button {
+	color: $white;
+	background-color: $orange;
+	width: 225px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 20px 0;
+	display: inline-block;
+	cursor: url(../images/general/eye.png), auto;
+	border: 2px solid $orange;
+	@media (max-width: 360px) {
+		width: 200px;
+	}
+	&:hover {
+		color: $orange;
+		background-color: transparent;
+	}
+}
